@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HungerFood - Smart Dining Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+      :root {
+        --admin-bg: #0B0F19;
+        --admin-sidebar: #070A11;
+        --admin-card: #111827;
+        --admin-primary: #FF6A00;
+        --font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+
+      body {
+        background-color: var(--admin-bg);
+        color: #FFFFFF;
+        font-family: var(--font-family);
+        margin: 0;
+        overflow-x: hidden;
+      }
+
+      /* Global Professional UI Helpers */
+      * {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      *::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Safe Area Padding Classes */
+      .pt-safe-premium {
+        padding-top: calc(env(safe-area-inset-top) + 3rem);
+      }
+      
+      .pt-safe-standard {
+        padding-top: calc(env(safe-area-inset-top) + 1.5rem);
+      }
+
+      .sidebar-active {
+        background-color: var(--admin-primary);
+        color: white !important;
+      }
+
+      .card-gradient {
+        background: linear-gradient(145deg, #111827, #0B0F19);
+      }
+      
+      #map-container {
+        height: 100%;
+        width: 100%;
+        background: #f8fafc;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "react-router": "https://esm.sh/react-router@^7.13.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

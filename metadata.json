@@ -1,0 +1,9 @@
+{
+  "requestFramePermissions": [
+    "camera",
+    "geolocation",
+    "microphone"
+  ],
+  "name": "HungerFood - Smart Dining Hub",
+  "description": "Enterprise-grade QR Table Ordering and Delivery Platform"
+}
